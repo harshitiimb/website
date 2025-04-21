@@ -1,0 +1,276 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f2937;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #6366f1, #60a5fa);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content span {
+  color: #facc15;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #facc15;
+  color: #1f2937;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #eab308;
+}
+
+.intro-image img {
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+/* Section Structure */
+.section {
+  padding: 4rem 1rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* About & Goals */
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+/* Academics */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Activities */
+.styled-list {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.05rem;
+}
+
+.styled-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.styled-list li::before {
+  content: '✅';
+  margin-right: 0.75rem;
+  color: #6366f1;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #facc15;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: #e5e7eb;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #facc15;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .intro-text {
+    flex: 1;
+  }
+
+  .intro-image {
+    flex: 1;
+    text-align: right;
+  }
+
+  .intro-image img {
+    width: 180px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    font-size: 0.95rem;
+  }
+}
