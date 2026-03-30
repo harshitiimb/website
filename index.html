@@ -3,100 +3,329 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harshit Pathak - Resume</title>
+  <title>Harshit Pathak - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">Harshit Pathak</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#goals">Goals</a></li>
-          <li><a href="#academics">Academics</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero-section">
-    <div class="container hero-content">
-      <div class="intro-text">
-        <h1>Hello, I'm <span>Harshit Pathak</span></h1>
-        <p>Digital Business Enthusiast | IIM Bangalore | Problem Solver | Video Editor | Idea Architect</p>
-        <a href="#contact" class="cta-button">Connect with Me</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">HP</div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="intro-image">
-        <img src="HA_Photo.jpg" alt="Profile Photo" />
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="container">
-      <h2><i class="fas fa-user"></i> About Me</h2>
-      <p>
-        A creative enthusiast with a passion for video editing, adventure sports, and digital marketing. When I'm not crafting compelling visuals or exploring marketing trends, you’ll find me smashing it on the badminton court or pushing limits through outdoor adventures. I also love diving into new projects on my desktop, turning ideas into digital reality.
-
-
-      </p>
-    </div>
-  </section>
-
-  <section class="section" id="goals">
-    <div class="container">
-      <h2><i class="fas fa-bullseye"></i> Career Goals</h2>
-      <p>
-        I aim to build a dynamic career at the intersection of creativity and business. Leveraging my skills in video editing and digital marketing, along with my academic background in Digital Business & Entrepreneurship, I aspire to become a digital strategist or content creator who drives impactful brand growth. Long-term, I envision launching my own digital venture that combines storytelling, innovation, and adventure.
-      </p>
-    </div>
-  </section>
-
-  <section class="section" id="academics">
-    <div class="container">
-      <h2><i class="fas fa-graduation-cap"></i> Academic Achievements</h2>
-      <div class="cards">
-        <div class="card">10th Board Exam: <strong>82.83%</strong></div>
-        <div class="card">12th Board Exam: <strong>83.40%</strong></div>
-        
-        <div class="card">BBA, IIM Bangalore</div>
-        
-        <div class="card">NCC A Certificate</div>
-        <div class="card">Achieved a 94.4 percentile in National Interactive Maths Olympiad</div>
-        <div class="card">Participated in International Mathematics Olympiad and ICAS Science</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="activities">
-    <div class="container">
-      <h2><i class="fas fa-trophy"></i> Activities & Interests</h2>
-      <ul class="styled-list">
-        <li>Rock Climbing Activity at Gwalior fort</li>
-        <li>Badminton & Football at Lakshmibai National Institute of Physical Education</li>
-        <li>Video Editing</li>
-        <li>UX Design</li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
+  </nav>
+
+  <!-- Hero Section with 3D -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="cube-container">
+        <div class="cube" id="cube">
+          <div class="cube-face front">HP</div>
+          <div class="cube-face back">HA</div>
+          <div class="cube-face right">PT</div>
+          <div class="cube-face left">HK</div>
+          <div class="cube-face top">25</div>
+          <div class="cube-face bottom">BBA</div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-title">Harshit Pathak</h1>
+        <p class="hero-subtitle">Digital Business Enthusiast | Strategist | Innovator</p>
+        <p class="hero-description">Pursuing BBA from IIM Bangalore and DTU | Problem Solver | Social Media Strategist</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#projects" class="btn btn-secondary">View My Work</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
   </section>
 
-  <footer id="contact">
+  <!-- About Section -->
+  <section class="about" id="about">
     <div class="container">
-      <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
-      <p>Email: <a href="mailto:harshit.pathak24@iimb.ac.in">harshit.pathak24@iimb.ac.in</a></p>
-      <p>Linkedin:
-        <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/harshit-pathakk" target="_blank">linkedin.com/in/harshit-pathakk</a>
-      </p>
-      <p>&copy; 2025 Harshit Pathak | All rights reserved</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hi! I'm Harshit, a passionate digital business enthusiast from Delhi pursuing a BBA at IIM Bangalore. I thrive at the intersection of creativity and strategy, combining skills in social media marketing, content creation, and business analytics.</p>
+          <p>With experience in social media marketing internships and working on live projects, I've developed a keen interest in building meaningful digital strategies that drive growth and engagement. I'm driven by the challenge of solving complex problems and creating impactful solutions.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3>5+</h3>
+              <p>Competitions</p>
+            </div>
+            <div class="stat-item">
+              <h3>3</h3>
+              <p>Live Projects</p>
+            </div>
+            <div class="stat-item">
+              <h3>25%</h3>
+              <p>Follower Growth</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="HA_Photo.jpg" alt="Harshit Pathak" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <h2 class="section-title">Achievements & Awards</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <h3>Finalist - Mind the Product</h3>
+          <p>Finalist at IIT Roorkee competition showcasing innovative thinking</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🎯</div>
+          <h3>Finalist - Arthik Khayal</h3>
+          <p>DTU competition with 1000+ participants</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🌟</div>
+          <h3>Global Semi-Finalist</h3>
+          <p>Strategy Storm at IIT Guwahati - 3500+ participants</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">📜</div>
+          <h3>NCC A Certificate</h3>
+          <p>National Cadet Corps A Certificate</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🏅</div>
+          <h3>94.4 Percentile</h3>
+          <p>National Interactive Maths Olympiad</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🎓</div>
+          <h3>IIM Bangalore</h3>
+          <p>BBA (Pursuing both degrees concurrently)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience & Internships</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Social Media Marketing Intern</h3>
+            <p class="company">ISCI Foundation</p>
+            <p class="date">July 2025 - Aug 2025</p>
+            <ul>
+              <li>Increased posting frequency by 25% through weekly content planning</li>
+              <li>Contributed to 10% follower growth with consistent, community-focused content</li>
+              <li>Designed graphics and visual content using Canva, Lovable.dev, Claude</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Sustainability Audit Project</h3>
+            <p class="company">Analytics/Consulting</p>
+            <p class="date">Live Project</p>
+            <ul>
+              <li>Conducted operational audit for 60+ year traditional snacks manufacturer</li>
+              <li>Identified inefficiencies in energy, equipment, packaging, and working conditions</li>
+              <li>Delivered cost-reduction roadmap</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Volunteer - ISCI Foundation</h3>
+            <p class="company">NGO & Community</p>
+            <p class="date">Ongoing</p>
+            <ul>
+              <li>Led plantation efforts planting 100+ saplings</li>
+              <li>Participated in cleanliness and awareness drives</li>
+              <li>Assisted in educational outreach and community engagement content</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">🌐</div>
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p class="tech-stack">HTML • CSS • JavaScript</p>
+            <p>Live website development with responsive design and interactive 3D elements for enhanced user experience</p>
+            <a href="https://harshitiimb.github.io/website/" target="_blank" class="project-link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">📊</div>
+          </div>
+          <div class="project-content">
+            <h3>IPMAT Question Bank</h3>
+            <p class="tech-stack">Content Creation • Strategy</p>
+            <p>Educational content venture - curated 600+ IPMAT questions across Quant, VARC, and LR for coaching centers</p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">🎨</div>
+          </div>
+          <div class="project-content">
+            <h3>Social Media Campaign</h3>
+            <p class="tech-stack">Canva • Analytics • Strategy</p>
+            <p>Comprehensive social media marketing campaign resulting in 25% increased posting frequency and 10% follower growth</p>
+            <a href="#" class="project-link">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3>Technical Skills</h3>
+          <div class="skills-list">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Google Analytics</span>
+            <span class="skill-tag">SEO Basics</span>
+            <span class="skill-tag">DaVinci Resolve</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Tools & Platforms</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Claude AI</span>
+            <span class="skill-tag">Lovable.dev</span>
+            <span class="skill-tag">ChatGPT</span>
+            <span class="skill-tag">MS Office</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Soft Skills</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Organizational Skills</span>
+            <span class="skill-tag">Strategic Thinking</span>
+            <span class="skill-tag">Team Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3>BBA in Digital Business & Entrepreneurship</h3>
+          <p class="institution">IIM Bangalore</p>
+          <p class="status">Pursuing (Concurrent degrees)</p>
+        </div>
+        <div class="education-card">
+          <h3>12th Grade</h3>
+          <p class="institution">Delhi Public School / Local Board</p>
+          <p class="score">83.40%</p>
+        </div>
+        <div class="education-card">
+          <h3>10th Grade</h3>
+          <p class="institution">Delhi Public School / Local Board</p>
+          <p class="score">82.83%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-content">
+        <p>I'm always open to exciting opportunities and collaborations. Feel free to reach out!</p>
+        <div class="contact-methods">
+          <a href="mailto:harshitpathakme@gmail.com" class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email</h3>
+            <p>harshitpathakme@gmail.com</p>
+          </a>
+          <a href="tel:+917000109512" class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>Phone</h3>
+            <p>+91 7000109512</p>
+          </a>
+          <a href="https://www.linkedin.com/in/harshit-pathakk" target="_blank" class="contact-card">
+            <div class="contact-icon">💼</div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/harshit-pathakk</p>
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/harshit-pathakk" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:harshitpathakme@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Harshit Pathak. All rights reserved.</p>
+      <p>Designed & Developed with creativity and passion</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
